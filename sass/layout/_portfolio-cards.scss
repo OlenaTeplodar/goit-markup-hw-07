@@ -7,9 +7,8 @@
 .cards-overlay {
   position: relative;
     overflow: hidden;
-}
 
-.cards-overlay__text {
+&__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,19 +26,23 @@
   transform: translateY(100%);
   transition: transform var(--transition-dur-func);
 }
-
-.cards-item__link:hover .cards-overlay__text,
-.cards-item__link:focus .cards-overlay__text {
-  transform: translateY(0);
 }
+
+
 .cards-item__link {
   display: block;
 transition: box-shadow var(--transition-dur-func);
+
+&:hover .cards-overlay__text,
+&:focus .cards-overlay__text {
+  transform: translateY(0);
 }
-.cards-item__link:hover,
-.cards-item__link:focus {
+
+&:hover, &:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+}
+
 
 .cards__title {
   font-weight: 700;

@@ -27,17 +27,18 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   transition: border-color var(--transition-dur-func);
-}
 
-.close-btn:hover,
-.close-btn:focus {
+  &:hover, &:focus {
   border-color: var(--button-hover);
 }
 
-.close-btn:hover .icon-close,
-.close-btn:focus .icon-close {
+&:hover .icon-close,
+&:focus .icon-close {
   fill: var(--button-hover);
 }
+}
+
+
 .icon-close {
   fill: var(--black-color);
   transition: fill var(--transition-dur-func);

@@ -14,10 +14,12 @@
 
 .features-item {
     width: 270px;
-}
-.features-item:not(:last-child) {
+
+&:not(:last-child) {
 margin-right: 30px;
 }
+}
+
 .features-subtitle {
     margin-bottom: 10px;
     font-size: 14px;

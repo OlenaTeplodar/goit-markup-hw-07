@@ -27,11 +27,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
   transition: border-color var(--transition-dur-func), fill var(--transition-dur-func);
-}
-.modal-form__input:focus, .modal-form__input:hover {
+
+  &:focus, &:hover {
   outline: none;
   border-color: var(--title-text-color-accent);
 }
+}
+
 .modal-form__input-icon {
   display: block;
   position: absolute;
@@ -54,12 +56,14 @@ resize: none;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 transition: border-color var(--transition-dur-func);
-}
 
-.modal-form__massage:focus, .modal-form__massage:hover {
+&:focus, &:hover {
 outline: none;
 border-color: var(--title-text-color-accent);
 }
+}
+
+
 
 .modal-form__massage::placeholder {
   font-size: 12px;

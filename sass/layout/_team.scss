@@ -2,7 +2,6 @@
   background-color: var(--light-dark-background);
 }
 
-
 .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -54,13 +53,14 @@ text-align: center;
   background-color: var(--white-color);
   color: var(--icon-color);
   transition: color var(--transition-dur-func), background-color var(--transition-dur-func);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
+&:hover, &:focus {
   background-color: var(--title-text-color-accent);
   color: var(--white-color);
 }
+}
+
+
 
 .social-list-icon {
   fill: currentColor;

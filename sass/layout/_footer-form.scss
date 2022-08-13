@@ -15,12 +15,14 @@
   font-size: 16px;
   color: var(--text-color-dark-bkg);
   transform: border-color var(--transition-dur-func);
-}
 
-.email-field__input:focus {
+&:focus {
   outline: none;
   border-color: var(--button-hover);
 }
+}
+
+
 
 .email-field__btn-submit {
   display: flex;
